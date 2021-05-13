@@ -12,6 +12,7 @@ const app = express();
 // Middleware setup
 
 // use(): Passes middleware to all route handlers
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cookieSession({
