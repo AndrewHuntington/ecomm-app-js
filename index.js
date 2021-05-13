@@ -18,6 +18,7 @@ app.use(
     keys: ["jslfkjdlsajkf;jalk"], // encryption key for cookie data
   })
 );
+
 app.use(authRouter);
 
 app.listen(3000, () => {
